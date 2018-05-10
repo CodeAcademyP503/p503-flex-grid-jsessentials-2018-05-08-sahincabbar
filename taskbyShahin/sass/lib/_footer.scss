@@ -1,0 +1,28 @@
+footer {
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    border-top: 1px solid #525252;
+    top: 3338px;
+    background: #6F6F6F;
+    p {
+        margin: 0;
+        width: 410px;
+        color: #fff;
+        position: relative;
+        top: 17px;
+        left: 37%;
+        text-align: center;
+    }
+    .footend {
+        height: 46px;
+        display: flex;
+        position: relative;
+        left: 42%;
+        top: 18px;
+        width: 270px;
+        div{
+            cursor: pointer;
+        }
+    }
+}

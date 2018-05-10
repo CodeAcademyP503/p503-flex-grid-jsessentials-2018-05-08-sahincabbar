@@ -1,0 +1,864 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+#navbar {
+  width: 100%;
+  height: 62px;
+  background: #6F6F6F;
+}
+#navbar .logo {
+  width: 250px;
+  padding-top: 9px;
+  cursor: pointer;
+  height: 47px;
+}
+#navbar .logo img {
+  width: 100%;
+  position: relative;
+  right: 19px;
+}
+#navbar ::placeholder {
+  color: black;
+  opacity: 1;
+  padding-left: 10px;
+}
+#navbar .searchpad {
+  width: 600px;
+  height: 187px;
+  background: #84AE3E;
+  border-radius: 5px;
+  position: absolute;
+  top: 85px;
+  left: -210px;
+}
+#navbar .searchpad .selected {
+  color: #fff;
+  position: absolute;
+  width: 95px;
+  top: -1px;
+  left: 308px;
+}
+#navbar .searchpad .selected #min {
+  position: absolute;
+  top: 17px;
+  left: 85px;
+  width: 85px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .selected #max {
+  position: absolute;
+  top: 17px;
+  left: 177px;
+  width: 85px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .selected1 {
+  color: #fff;
+  position: absolute;
+  width: 95px;
+  top: 40px;
+  left: 308px;
+}
+#navbar .searchpad .selected1 #mertebe {
+  position: absolute;
+  top: 17px;
+  left: 85px;
+  width: 85px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .selected1 #mertebe1 {
+  position: absolute;
+  top: 17px;
+  left: 177px;
+  width: 85px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .selected2 {
+  color: #fff;
+  position: absolute;
+  width: 95px;
+  top: 81px;
+  left: 308px;
+}
+#navbar .searchpad .selected2 #room {
+  position: absolute;
+  top: 17px;
+  left: 85px;
+  width: 85px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .selected2 #room1 {
+  position: absolute;
+  top: 17px;
+  left: 177px;
+  width: 85px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .selected3 {
+  color: #fff;
+  position: absolute;
+  width: 95px;
+  top: 122px;
+  left: 308px;
+}
+#navbar .searchpad .selected3 #area {
+  position: absolute;
+  top: 17px;
+  left: 85px;
+  width: 85px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .selected3 #area1 {
+  position: absolute;
+  top: 17px;
+  left: 177px;
+  width: 85px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .select {
+  padding-left: 12px;
+  color: #fff;
+  width: 95px;
+}
+#navbar .searchpad .select #firstselect {
+  position: absolute;
+  top: 16px;
+  left: 129px;
+  width: 145px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .select #secondselect {
+  position: absolute;
+  top: 56px;
+  left: 129px;
+  width: 145px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad .select #thirdselect {
+  position: absolute;
+  top: 96px;
+  left: 129px;
+  width: 145px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 15px;
+}
+#navbar .searchpad_bottom {
+  width: 600px;
+  height: 30px;
+  border-radius: 4px;
+  position: absolute;
+  top: 263px;
+  background: #6D8F34;
+  left: -210px;
+}
+#navbar .searchpad_bottom i {
+  color: #fff;
+  padding-left: 139px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+#navbar .searchpad_bottom .txt {
+  color: #fff;
+  position: absolute;
+  width: 90px;
+  top: 7px;
+  left: 160px;
+  cursor: pointer;
+}
+#navbar .searchpad_bottom .txt:hover {
+  color: #FF860D;
+  transition: all .3s ease;
+}
+#navbar .searchpad_bottom #checkBox {
+  position: absolute;
+  top: 8px;
+  left: 266px;
+  -webkit-transform: scale(1.6);
+  cursor: pointer;
+}
+#navbar .searchpad_bottom #checkBox1 {
+  position: absolute;
+  top: 8px;
+  left: 393px;
+  -webkit-transform: scale(1.6);
+  cursor: pointer;
+}
+#navbar .searchpad_bottom .text {
+  color: #fff;
+  position: absolute;
+  width: 90px;
+  top: 7px;
+  left: 291px;
+}
+#navbar .searchpad_bottom .text1 {
+  color: #fff;
+  position: absolute;
+  width: 90px;
+  top: 7px;
+  left: 423px;
+}
+#navbar .searchpad_bottom .rightline {
+  height: 18px;
+  width: 2px;
+  background: #fff;
+  position: absolute;
+  top: 7px;
+  left: 255px;
+}
+#navbar .searchpad_bottom .rightline1 {
+  height: 18px;
+  width: 2px;
+  background: #fff;
+  position: absolute;
+  top: 7px;
+  left: 384px;
+}
+#navbar .searchpad_bottom .rightbutton {
+  width: 117px;
+  background: #f6a828;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  border-radius: 3px;
+  right: 0px;
+  cursor: pointer;
+}
+#navbar .searchpad_bottom .rightbutton:hover {
+  background: #FF860D;
+  transition: all .3s ease;
+}
+#navbar .searchpad_bottom .rightbutton h5 {
+  color: #fff;
+  margin: 0;
+  font-size: 17px;
+  text-align: center;
+  line-height: 29px;
+}
+#navbar .rightmenu {
+  width: 300px;
+  position: absolute;
+  left: 440px;
+  top: 86px;
+  height: 206px;
+}
+#navbar .rightmenu #user {
+  width: 170px;
+  border: none;
+  height: 35px;
+  background: #84AE3E;
+  border-radius: 7px;
+  position: absolute;
+  top: 32px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+#navbar .rightmenu #user:hover {
+  background: #F6A828;
+  transition: all .2s ease;
+}
+#navbar .rightmenu .btn {
+  position: absolute;
+  top: 77px;
+  width: 170px;
+  height: 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #f4ffe2;
+  cursor: pointer;
+}
+#navbar .rightmenu .btn:hover {
+  background: #FFDCAA;
+  transition: all .2s ease;
+}
+#navbar .rightmenu .btn1 {
+  position: absolute;
+  top: 110px;
+  width: 170px;
+  height: 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #f4ffe2;
+  cursor: pointer;
+}
+#navbar .rightmenu .btn1:hover {
+  background: #FFDCAA;
+  transition: all .2s ease;
+}
+#navbar .rightmenu .btn2 {
+  position: absolute;
+  top: 143px;
+  width: 170px;
+  height: 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #f4ffe2;
+  cursor: pointer;
+}
+#navbar .rightmenu .btn2:hover {
+  background: #FFDCAA;
+  transition: all .2s ease;
+}
+#navbar .rightmenu .btn3 {
+  position: absolute;
+  top: 176px;
+  width: 170px;
+  height: 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #f4ffe2;
+  cursor: pointer;
+}
+#navbar .rightmenu .btn3:hover {
+  background: #FFDCAA;
+  transition: all .2s ease;
+}
+#navbar .menu {
+  position: absolute;
+  top: 0;
+  margin-left: 210px;
+  width: 865px;
+  height: 62px;
+}
+#navbar .menu .nav ul {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  padding-left: 37px;
+  margin-top: 23px;
+}
+#navbar .menu .nav ul li {
+  margin-left: 19px;
+  width: 80px;
+  cursor: pointer;
+}
+#navbar .menu .nav ul li:first-child {
+  margin-left: 0;
+  margin-right: 10px;
+}
+#navbar .menu .nav ul li:hover {
+  color: #FF7600;
+  transition: all .3s ease;
+}
+#navbar .menu #elan {
+  position: absolute;
+  top: 18px;
+  height: 25px;
+  left: 525px;
+  border-radius: 4px;
+  width: 100px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+#navbar .menu .icon {
+  width: 30px;
+  height: 27px;
+  position: absolute;
+  top: 18px;
+  border: none;
+  left: 599px;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 30px;
+  background: #b3b3b3;
+  cursor: pointer;
+  color: #f4f4f4;
+}
+#navbar .menu .icon:hover {
+  background: #FF860D;
+  transition: all .3s ease;
+}
+#navbar .menu #search {
+  top: 13px;
+  position: absolute;
+  right: 12px;
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+  outline: none;
+  background: #f6a828;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+#navbar .menu #search:hover {
+  background: #FF860D;
+  transition: all .3s ease;
+}
+
+#elanlar {
+  width: 850px;
+  height: 100%;
+  position: absolute;
+  top: 308px;
+  left: 229px;
+}
+#elanlar h3 {
+  margin: 0;
+  padding-left: 4px;
+  color: #444444;
+  text-shadow: 1px 1px 1px #BFBFBF;
+  border-left: 4px solid #FF860D;
+  margin-top: 15px;
+}
+#elanlar .flexitems1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+#elanlar .flexitems1 div {
+  background: #eff2f3;
+  height: 162px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #A6A6A6;
+}
+#elanlar .flexitems1 div:hover {
+  box-shadow: 1px 1px 3px #676767;
+}
+#elanlar .flexitems1 div img {
+  width: 100%;
+}
+#elanlar .flexitems1 div p {
+  color: #656565;
+  text-shadow: 1px 1px 1px #C3C3C3;
+  text-align: center;
+  margin: 0;
+  padding-top: 0px;
+  font-size: 14px;
+}
+#elanlar .flexitems1 div .top {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  text-shadow: 1px 1px 1px #3C3C3C;
+  width: 158px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 4px;
+}
+#elanlar .flexitems1 div .price {
+  color: #FF8C37;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2px;
+}
+#elanlar .flexitems1 div .top-text {
+  color: #DEDEDE;
+}
+#elanlar .leftads {
+  position: absolute;
+  top: -223px;
+  height: 2050px;
+  width: 190px;
+  right: -241px;
+  display: grid;
+  grid-row-gap: 20px;
+  cursor: pointer;
+}
+#elanlar .leftads img {
+  width: 170px;
+}
+#elanlar h4 {
+  margin: 0;
+  padding-left: 4px;
+  color: #444444;
+  text-shadow: 1px 1px 1px #BFBFBF;
+  border-left: 4px solid #6D8F34;
+  margin-top: 15px;
+  font-size: 17px;
+}
+#elanlar .btnfirst {
+  position: relative;
+  top: 7px;
+  width: 230px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+#elanlar .btnfirst:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnfirst1 {
+  position: relative;
+  top: 7px;
+  font-size: 13px;
+  width: 173px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnfirst1:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnsecond {
+  position: relative;
+  top: 12px;
+  width: 207px;
+  font-size: 13px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnsecond:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnthird_ {
+  position: relative;
+  top: 17px;
+  font-size: 13px;
+  width: 174px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnthird_:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnthird1 {
+  position: relative;
+  top: 17px;
+  width: 289px;
+  font-size: 13px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnthird1:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnthird {
+  position: relative;
+  top: 17px;
+  width: 191px;
+  font-size: 13px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnthird:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnsecond1 {
+  position: relative;
+  top: 12px;
+  width: 216px;
+  font-size: 13px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnsecond1:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnfourth {
+  position: relative;
+  top: 22px;
+  width: 140px;
+  font-size: 13px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnfourth:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnfourth_ {
+  position: relative;
+  top: 22px;
+  width: 267px;
+  font-size: 13px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnfourth_:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnfourth1 {
+  position: relative;
+  top: 22px;
+  font-size: 13px;
+  width: 186px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnfourth1:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnsecond_ {
+  position: relative;
+  top: 12px;
+  width: 166px;
+  font-size: 13px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnsecond_:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .btnfirst_ {
+  position: relative;
+  top: 7px;
+  width: 159px;
+  font-size: 13px;
+  height: 19px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+#elanlar .btnfirst_:hover {
+  background-color: #FFDCAA;
+  transition: all .2s ease;
+}
+#elanlar .useritems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 5px;
+  grid-column-gap: 14px;
+}
+#elanlar .useritems div {
+  border-bottom: 1px solid #EBFFD4;
+  cursor: pointer;
+}
+#elanlar .useritems div:hover {
+  border-bottom: 1px solid #42CD00;
+}
+#elanlar .useritems h5 {
+  margin: 0;
+  margin-top: -18px;
+  color: #525252;
+  margin-left: 22px;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px #BDBDBD;
+}
+#elanlar .useritems i {
+  color: #f4f4f4;
+  margin-top: 10px;
+}
+#elanlar .flexitems2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+#elanlar .flexitems2 div {
+  background: #eff2f3;
+  height: 162px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #A6A6A6;
+}
+#elanlar .flexitems2 div:hover {
+  box-shadow: 1px 1px 3px #676767;
+}
+#elanlar .flexitems2 div img {
+  width: 100%;
+}
+#elanlar .flexitems2 div p {
+  color: #656565;
+  text-shadow: 1px 1px 1px #C3C3C3;
+  text-align: center;
+  margin: 0;
+  padding-top: 0px;
+  font-size: 14px;
+}
+#elanlar .flexitems2 div .top {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  text-shadow: 1px 1px 1px #3C3C3C;
+  width: 158px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 4px;
+}
+#elanlar .flexitems2 div .price {
+  color: #FF8C37;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2px;
+}
+#elanlar .flexitems2 div .top-text {
+  color: #DEDEDE;
+}
+#elanlar .links {
+  width: 860px;
+  height: 105px;
+}
+#elanlar footer {
+  width: 100%;
+  height: 50px;
+  background: #000;
+}
+#elanlar .flexitems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+#elanlar .flexitems div {
+  background: #eff2f3;
+  height: 162px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #A6A6A6;
+}
+#elanlar .flexitems div:hover {
+  box-shadow: 1px 1px 3px #676767;
+}
+#elanlar .flexitems div img {
+  width: 100%;
+}
+#elanlar .flexitems div p {
+  color: #656565;
+  text-shadow: 1px 1px 1px #C3C3C3;
+  text-align: center;
+  margin: 0;
+  padding-top: 0px;
+  font-size: 14px;
+}
+#elanlar .flexitems div .top {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  text-shadow: 1px 1px 1px #3C3C3C;
+  width: 158px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 4px;
+}
+#elanlar .flexitems div .price {
+  color: #FF8C37;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2px;
+}
+#elanlar .flexitems div .top-text {
+  color: #DEDEDE;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  border-top: 1px solid #525252;
+  top: 3338px;
+  background: #6F6F6F;
+}
+footer p {
+  margin: 0;
+  width: 410px;
+  color: #fff;
+  position: relative;
+  top: 17px;
+  left: 37%;
+  text-align: center;
+}
+footer .footend {
+  height: 46px;
+  display: flex;
+  position: relative;
+  left: 42%;
+  top: 18px;
+  width: 270px;
+}
+footer .footend div {
+  cursor: pointer;
+}

@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
+    <title>YeniEmlak</title>
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <div class="nav">
+                    <ul>
+                        <li>Ana səhifə</li>
+                        <li>Axtarış</li>
+                        <li>Rieltor</li>
+                        <li>Faydali</li>
+                        <li>Əlaqə</li>
+                    </ul>
+                </div>
+                <input type="text" id="elan" name="Elan" placeholder="Elan №">
+                <div class="icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button id="search">+ Elan ver</button>
+                <div class="searchpad">
+                    <div class="select">
+                        <h4>Əmlakın növü</h4>
+                        <select id="firstselect">
+                            <option value="Bina ev mənzil">Bina ev mənzil</option>
+                            <option value="Həyət evi/Villa">Həyət evi/Villa</option>
+                            <option value="Torpaq sahəsi">Torpaq sahəsi</option>
+                            <option value="Obyekt">Obyekt</option>
+                            <option value="Ofis">Ofis</option>
+                            <option value="Qaraj">Qaraj</option>
+                            <option value="Digər">Digər</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <h4>Elanın növü</h4>
+                        <select id="secondselect">
+                            <option value="Satılır">Satılır</option>
+                            <option value="Kirayə aylıq">Kirayə aylıq</option>
+                            <option value="Kirayə günlük">Kirayə günlük</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <h4>Şəhər</h4>
+                        <select id="thirdselect">
+                            <option value="0">Bütün şəhərlər</option>
+                            <option value="7">Bakı</option>
+                            <option value="1">Abşeron</option>
+                            <option value="2">Xırdalan ş.</option>
+                            <option value="57">Sumqayıt</option>
+                            <option value="18">Gəncə</option>
+                            <option value="3">Ağdaş</option>
+                            <option value="4">Ağstafa</option>
+                            <option value="5">Ağsu</option>
+                            <option value="6">Astara</option>
+                            <option value="8">Balakən</option>
+                            <option value="9">Bərdə</option>
+                            <option value="10">Beyləqan</option>
+                            <option value="11">Biləsuvar</option>
+                            <option value="12">Cəbrayıl</option>
+                            <option value="13">Cəlilabad</option>
+                            <option value="14">Daşkəsən</option>
+                            <option value="15">Dəliməmmədli</option>
+                            <option value="16">Fizuli</option>
+                            <option value="17">Gədəbəy</option>
+                            <option value="19">Goranboy</option>
+                            <option value="20">Göyçay</option>
+                            <option value="21">Göygöl</option>
+                            <option value="22">Göytəpə</option>
+                            <option value="23">Hacıqabul</option>
+                            <option value="24">Horadiz</option>
+                            <option value="25">İmişli</option>
+                            <option value="26">İsmayıllı</option>
+                            <option value="27">Kəlbəcər</option>
+                            <option value="28">Kürdəmir</option>
+                            <option value="29">Laçın</option>
+                            <option value="30">Lənkəran</option>
+                            <option value="31">Lerik</option>
+                            <option value="32">Liman</option>
+                            <option value="33">Masallı</option>
+                            <option value="34">Mingəçevir</option>
+                            <option value="36">Naftalan</option>
+                            <option value="37">Naxçıvan MR</option>
+                            <option value="38">Neftçala</option>
+                            <option value="39">Oğuz</option>
+                            <option value="40">Qax</option>
+                            <option value="41">Qazax</option>
+                            <option value="42">Qəbələ</option>
+                            <option value="43">Qobustan</option>
+                            <option value="44">Quba</option>
+                            <option value="45">Qubadlı</option>
+                            <option value="46">Qusar</option>
+                            <option value="47">Saatlı</option>
+                            <option value="48">Sabirabad</option>
+                            <option value="49">Şabran</option>
+                            <option value="50">Şamaxı</option>
+                            <option value="51">Samux</option>
+                            <option value="52">Şəki</option>
+                            <option value="53">Salyan</option>
+                            <option value="54">Şəmkir</option>
+                            <option value="55">Şirvan</option>
+                            <option value="56">Siyəzən</option>
+                            <option value="58">Şuşa</option>
+                            <option value="59">Tərtər</option>
+                            <option value="60">Tovuz</option>
+                            <option value="61">Ucar</option>
+                            <option value="62">Xaçmaz</option>
+                            <option value="63">Xaçmaz / Xudat</option>
+                            <option value="64">Xaçmaz / Nabran</option>
+                            <option value="65">Xızı</option>
+                            <option value="66">Xocavənd</option>
+                            <option value="67">Ağcəbədi</option>
+                            <option value="68">Yardımlı</option>
+                            <option value="69">Yevlax</option>
+                            <option value="70">Zaqatala</option>
+                            <option value="71">Zəngilan</option>
+                            <option value="72">Zərdab</option>
+                            <option value="73">Ağdam</option>
+                        </select>
+                    </div>
+                    <div class="selected">
+                        <h4>Qiymət</h4>
+                        <select id="min">
+                            <option value="">min</option>
+                            <option>500</option>
+                            <option>1000</option>
+                            <option>5000</option>
+                            <option>10000</option>
+                            <option>30000</option>
+                            <option>50000</option>
+                            <option>70000</option>
+                            <option>90000</option>
+                            <option>110000</option>
+                            <option>130000</option>
+                            <option>150000</option>
+                            <option>170000</option>
+                            <option>190000</option>
+                            <option>250000</option>
+                            <option>300000</option>
+                            <option>500000</option>
+                        </select>
+                        <select id="max">
+                            <option value="">max</option>
+                            <option>1000</option>
+                            <option>2000</option>
+                            <option>4000</option>
+                            <option>20000</option>
+                            <option>40000</option>
+                            <option>60000</option>
+                            <option>80000</option>
+                            <option>100000</option>
+                            <option>120000</option>
+                            <option>140000</option>
+                            <option>160000</option>
+                            <option>180000</option>
+                            <option>200000</option>
+                            <option>400000</option>
+                            <option>600000</option>
+                            <option>1000000</option>
+                        </select>
+                    </div>
+                    <div class="selected1">
+                        <h4>Mərtəbə</h4>
+                        <select id="mertebe">
+                            <option value=""> </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select id="mertebe1">
+                            <option value=""> </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </div>
+                    <div class="selected2">
+                        <h4>Otaq</h4>
+                        <select id="room">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">15+</option>
+                        </select>
+                        <select id="room1">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">15+</option>
+                        </select>
+                    </div>
+                    <div class="selected3">
+                        <h4>Sahəsi</h4>
+                        <select id="area">
+                            <option value="">min</option>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                            <option>50</option>
+                            <option>60</option>
+                            <option>70</option>
+                            <option>80</option>
+                            <option>90</option>
+                            <option>100</option>
+                            <option>120</option>
+                            <option>140</option>
+                            <option>160</option>
+                            <option>180</option>
+                            <option>200</option>
+                            <option>250</option>
+                            <option>300</option>
+                        </select>
+                        <select id="area1">
+                            <option value="">max</option>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                            <option>50</option>
+                            <option>60</option>
+                            <option>70</option>
+                            <option>80</option>
+                            <option>90</option>
+                            <option>100</option>
+                            <option>120</option>
+                            <option>140</option>
+                            <option>160</option>
+                            <option>180</option>
+                            <option>200</option>
+                            <option>250</option>
+                            <option>300</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="searchpad_bottom">
+                    <i class="fas fa-search"></i>
+                    <div class="txt">Ətraflı axtarış</div>
+                    <div class="rightline"></div>
+                    <input id="checkBox" type="checkbox">
+                    <div class="text">Yalnız şəkilli </div>
+                    <div class="rightline1"></div>
+                    <input id="checkBox1" type="checkbox">
+                    <div class="text1">Kredit </div>
+                    <div class="rightbutton">
+                        <h5>Axtar</h5>
+                    </div>
+                </div>
+                <div class="rightmenu">
+                    <button id="user">► İstifadəçi girişi</button>
+                    <button class="btn">Elan verilmə qaydası</button>
+                    <button class="btn1">Elana düzəliş və silmək</button>
+                    <button class="btn2">Bakıda evlərin qiyməti</button>
+                    <button class="btn3">Ödənişli elan verilməsi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="elanlar">
+        <h3>VIP Elanlar</h3>
+        <div class="flexitems">
+            <div>
+                <div class="top">
+                    <span class="price">70000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/10052018W341035.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">50</span>
+                    <span class="top-text">AZN / Günlük</span>
+                </div>
+                <img src="images/10052018W979915.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 140 </strong> m2 Bakı, Yasamal rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">50</span>
+                    <span class="top-text">AZN / Günlük</span>
+                </div>
+                <img src="images/09052018W295197.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 120</strong> m2 Bakı, Səbail rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">125000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/10052018W341060.jpeg" alt="">
+                <p>
+                    <strong>Bina ev menzil 85</strong> m2 Bakı, Sabunçu rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">34000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/10052018W336758.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 70</strong> m2 Abşeron, Masazır</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">160000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/09052018W340262.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 157</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">140000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/09052018W335941.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 157</strong> m2 Bakı, Xətai rayonu </p>
+
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">85000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/09052018W335887.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 72</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">160000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/08052018W315405.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 165</strong> m2 Bakı, Sabunçu rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">24000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/08052018W153823.jpg" alt="">
+                <p>
+                    <strong>Obyekt 80 </strong> m2 Bakı, Yasamal rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">360000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/06052018W336063.jpeg" alt="">
+                <p>
+                    <strong>Obyekt 180 </strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">130000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W236088.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 200</strong> m2 Bakı, Suraxanı rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">38000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W173028.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 38</strong> m2 Xırdalan ş.</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">68000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W173028.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 67</strong> m2 Xırdalan ş.</p>
+
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">65000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W335211.jpeg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 156</strong> m2 Bakı, Sabunçu rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">45000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W308620.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 95</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">170000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W332629.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 118</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">80000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W324453.jpeg" alt="">
+                <p>
+                    <strong>Bina ev menzil 60</strong> m2 Bakı, Nərimanov rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">6000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W330541.jpg" alt="">
+                <p>
+                    <strong>Torpaq sahəsi 6 </strong> sot Abşeron, Masazır</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">200000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W694175.JPG" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 200</strong> m2 Bakı, Xəzər rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">115000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W332093.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 81</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">115000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W325658.jpeg" alt="">
+                <p>
+                    <strong>Bina ev menzil 76</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">33000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W291931.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 84</strong> m2 Xırdalan ş.</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">145000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W330407.png" alt="">
+                <p>
+                    <strong>Bina ev menzil 90</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">75000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W289396.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 140</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">88000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W328971.jpeg" alt="">
+                <p>
+                    <strong>Torpaq sahəsi 10 </strong> sot Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">92000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W326621.jpeg" alt="">
+                <p>
+                    <strong>Bina ev menzil 78</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">40000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W326160.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 160</strong> m2 Abşeron, Ceyranbatan qəs.</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">53000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W255689.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 96.1</strong> m2 Abşeron, Masazır</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">88500</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W301953.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 126</strong> m2 Xırdalan ş.</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">280000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W296851.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 84</strong> m2 Xırdalan ş.</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">17000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W296838.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 45</strong> m2 Xırdalan ş.</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">280000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W297373.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 200</strong> m2 Abşeron, Novxanı
+                </p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">70000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W290788.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 42</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">315000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W257264.jpeg" alt="">
+                <p>
+                    <strong>Bina ev menzil 185 </strong> m2 Bakı, Nizami rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">102000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W307785.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 145</strong> m2 Sumqayıt, Sumqayıt şəh.</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">250</span>
+                    <span class="top-text">AZN / Kirayə</span>
+                </div>
+                <img src="images/05052018W305339.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 95 </strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">270000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W300544.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 896</strong> m2 Bakı, Sabunçu rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">188000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W314210.jpg" alt="">
+                <p>
+                    <strong>Həyət evi / Villa 240</strong> m2 Bakı, Suraxanı rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">90000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W282063.jpeg" alt="">
+                <p>
+                    <strong>Bina ev menzil 95</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">42400</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/05052018W308619.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 50.4</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">25000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat1.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <img src="images/vip_add.png" alt="">
+                <p>
+                    <strong>Sizin elan burada</strong> VİP elan əlavə et
+                </p>
+            </div>
+        </div>
+        <h3>Satılır / Son əlavə olunanlar</h3>
+        <div class="flexitems1">
+            <div>
+                <div class="top">
+                    <span class="price">145000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat.jpeg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">73000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat1.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">25000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat2.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">37000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat3.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">74500</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat4.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">63500</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat5.jpeg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">24570</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat6.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">35400</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat7.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">72400</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat8.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+            <div>
+                <div class="top">
+                    <span class="price">54200</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat9.jpg" alt="">
+                <p>
+                    <strong> Həyət evi / Villa 192</strong> m2 Bakı, Binəqədi rayonu</p>
+            </div>
+        </div>
+        <h4>Kirayə / Son əlavə olunanlar</h4>
+        <div class="flexitems2">
+            <div>
+                <div class="top">
+                    <span class="price">115000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat.jpeg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+
+                <div class="top">
+                    <span class="price">147000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat2.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+
+                <div class="top">
+                    <span class="price">235000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat3.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+
+                <div class="top">
+                    <span class="price">14000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat4.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+
+                <div class="top">
+                    <span class="price">75000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat6.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+
+                <div class="top">
+                    <span class="price">36000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat7.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+
+                <div class="top">
+                    <span class="price">72400</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat8.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+
+                <div class="top">
+                    <span class="price">50000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat9.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+
+                <div class="top">
+                    <span class="price">97000</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat5.jpeg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+            <div>
+
+                <div class="top">
+                    <span class="price">26400</span>
+                    <span class="top-text">AZN / Satılır</span>
+                </div>
+                <img src="images/sat1.jpg" alt="">
+                <p>
+                    <strong>Bina ev menzil 115</strong> m2 Bakı, Xətai rayonu</p>
+            </div>
+        </div>
+        <div class="leftads">
+            <div>
+                <img src="images/instaqram.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/gunluk_ev.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/ucuz_kiraye.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/yayaz.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/istban.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/yenigun.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/yenitemir.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/yeniavto.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/kredit.jpg" alt="">
+            </div>
+        </div>
+        <h4>İstifadəçilərimiz</h4>
+        <div class="useritems">
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    İlahə</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Sahib (Qaraçöp)</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Quliyev Anar</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Vaqif müəllim </h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Elsevər</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Xətai DA</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Garant Elmlər</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    İlham</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Kamal</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Midiya</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Məcid</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>Həci Zöhrab</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Telman</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Cəbrailov Fəxrəddin</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Binəqədi Əbülfət</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Qulam Binəqədi</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Hacı Çingiz</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Emil</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Vüsal Qasımov</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Xəqani Binəqədi</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Vaqif</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Tofiq</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Nəsimi</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Zirvə Əmlak</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Binəqədi Loğman</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Bəxtiyar (Neftçilər)</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Tunar</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Şirazi İbişov</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Şaiq</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Tahir</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Ələskərov İslam</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Ramin Binəqədi</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Creative Yasamal</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    İbrahim</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Elnar (Nərimanov)</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Mərdan</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Qasım m.</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Avilla</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Elvin (A.Sultanova)</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Laza Əmlak</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Natiq Kərim</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Teyyub</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Müşviq</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Əli</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Məhərrəm Neweu... </h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Aslan</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Vüqar NefçilərƏmlak</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    ProHome</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Nicat Vəliyev</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Arif</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Dostlar</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Creative Nəsimi</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Garant Af Mall</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Aygün x.</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Binəqədi Röya x.</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Şirazi</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    RECA Əmlak</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Homeland (Altes p.)</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Şahdağ</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Tunay Abbasov</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    NEW HOUSE</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Anar Hövsan</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Euro Home</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Evim Əmlak</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Elzami</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    AminƏmlak İnşaatçı</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Talıbov Habil</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Masazır Əmlak</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Cəsarət VİP ofis</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Garant Əmlak-3</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Rafiq m.</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Vəliyev Müşfiq</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Seva x</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Vüsal VİP ofis</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Rəhman</h5>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h5>
+                    Vaqif H.Aslanov</h5>
+            </div>
+        </div>
+        <h4>Faydalı linklər</h4>
+        <div class="links">
+            <button class="btnfirst_">Bakida gunluk kiraye evler</button>
+            <button class="btnfirst_">Bakida ucuz kiraye evler</button>
+            <button class="btnfirst1">Bakida kreditlə satılan evlər</button>
+            <button class="btnfirst">2018 Bakıda evlərin qiyməti statistikası</button>
+            <button class="btnsecond_">Azərbaycanda yay istirahəti</button>
+            <button class="btnsecond1">İpoteka kreditlərinin verilməsi şərtləri</button>
+            <button class="btnsecond">Yeniavto.az Avtomobil elanlari sayti</button>
+            <button class="btnsecond">Yenitemir.az Təmir tikinti dizayn</button>
+            <button class="btnthird">Daşınmaz əmlak elanlari axtarışı</button>
+            <button class="btnthird1">ev menzil heyet evleri villa alqi satqi kiraye elanlari</button>
+            <button class="btnthird_">Qebelede gunluk kiraye evler</button>
+            <button class="btnthird_">İsmayıllıda gundelik heyet evi</button>
+            <button class="btnfourth">Qubada kiraye bag evi</button>
+            <button class="btnfourth_">Xırdalanda AAAF parkda kreditle satilan evlər</button>
+            <button class="btnfourth1">Masazirda kreditle satilan evler</button>
+        </div>
+    </section>
+    <footer>
+        <p>Sayt administrasiyası verilən elanlara görə məsuliyyət daşımır. Copyright © 2016. www.yeniemlak.az ! Bütün hüquqlar
+            qorunur. Tel: (+994 55) 261 21 26; E-mail: info@yeniemlak.az</p>
+        <div class="footend">
+            <div>
+                <img src="images/hit.gif" alt="">
+            </div>
+            <div>
+                <img src="images/3_1_FFFFFFFF_FFFFFFFF_0_pageviews.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/top100.gif" alt="">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
